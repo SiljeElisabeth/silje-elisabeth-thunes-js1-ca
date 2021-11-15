@@ -12,10 +12,12 @@ async function fetchMusic() {
     for(let i = 0; i < artistDetail.length; i++) {
         console.log(artistDetail[i]);
         artistContainer.innerHTML += `<div class="artist-card">
-                                        <h1>Artist: ${artistDetail[i].artist_names}</h1>
-                                        <h2>Song title: ${artistDetail[i].title}</h2>
-                                        <p>Lyric state: ${artistDetail[i].lyrics_state}</p>
-                                        </div>`
+                                        <div class="thumbnail-img" style:"background-image: url('${artistDetail[i].song_art_image_thumbnail_url}')">
+                                        </div>
+                                        <p>Artist:</p><h1>${artistDetail[i].artist_names}</h1>
+                                        <p>Song title:</p><h2>${artistDetail[i].title}</h2>
+                                        <p>Lyric state:</p><h3>${artistDetail[i].lyrics_state}</h3>
+                                     </div>`
     }
     
 }
