@@ -2,26 +2,28 @@ const musicUrl = "https://genius.p.rapidapi.com/artists/16775/songs";
 const artistContainer = document.querySelector(".artist-container");
 
 async function fetchMusic() {
-    try { const response = await fetch(musicUrl, {"headers": {
+    try { 
+    const response = await fetch(musicUrl, {"headers": {
         "x-rapidapi-key":"7b4130591amshd2015bdd299d172p150085jsn9aa4ea780d3a"
     }})
+
     const results = await response.json();
     const artistList = results.response;
     const artistDetail = artistList.songs;
 
     artistContainer.innerHTML = "";
 
-    makeHtml(html);
+    makeHtml(artistDetail);
 
     }catch(error) {
         console.log(error);
-        artistContainer.innerHTML += `<h1>An error occured ${error}</h1>`
+        artistContainer.innerHTML += `<p>An error occured ${error}</p>`
     }
 }
 
 fetchMusic();
 
-function makeHtml(html) {
+function makeHtml(artistDetail) {
     for(let i = 0; i < artistDetail.length; i++) {
         console.log(artistDetail[i]);
         artistContainer.innerHTML += `<div class="artist-card">
