@@ -19,16 +19,21 @@ body{
 h2{
     font-size: 1.5em;;
     margin:5px 0px;
+    text-align: center;
 }
 .artist-card p {
     font-size: 1.2em;
+    text-align: center;
 }
 
 
 .thumbnail-img{
     width: 200px;
     height:200px;
+    background-size: cover;
     border-radius: 50%;
+    position: relative;
+    left:22px;
 }
 nav {
     background-color:gray;
@@ -49,7 +54,7 @@ nav a {
 .loader{
     margin:0em 15em;
     border:15px solid rgb(212, 212, 212);
-    border-top:15px solid rgb(0, 180, 251);
+    border-top:15px solid rgb(251, 163, 0);
     border-radius: 50%;
     width:100px;
     height:100px;
@@ -63,4 +68,22 @@ nav a {
     100%{
         transform:rotate(360deg);
     }
+}
+.artist-detail-container h1{
+    text-align: center;
+}
+.details-img{
+    width:400px;
+    height:400px;
+    background-size: cover;
+    border-radius: 5%;
+}
+
+.artist-grid-container{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.artist-info{
+    padding:20px;
 }

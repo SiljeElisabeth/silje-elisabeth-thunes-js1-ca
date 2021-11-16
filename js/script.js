@@ -9,8 +9,9 @@ async function fetchMusic() {
 
     const results = await response.json();
     const artistList = results.response;
-    const artistDetail = artistList.songs;
-
+    const artistDetail = artistList.songs;  
+    console.log(artistDetail);
+    
     artistContainer.innerHTML = "";
 
     makeHtml(artistDetail);
@@ -25,9 +26,9 @@ fetchMusic();
 
 function makeHtml(artistDetail) {
     for(let i = 0; i < artistDetail.length; i++) {
-        console.log(artistDetail[i]);
+
         artistContainer.innerHTML += `<div class="artist-card">
-                                        <div class="thumbnail-img" style:"background-image: url('${artistDetail[i].song_art_image_thumbnail_url}')">
+                                        <div class="thumbnail-img" style="background-image: url('${artistDetail[i].song_art_image_thumbnail_url}')">
                                         </div>
                                         <h1>Artist: ${artistDetail[i].artist_names}</h1>
                                         <p>Song title: ${artistDetail[i].title}</p>
