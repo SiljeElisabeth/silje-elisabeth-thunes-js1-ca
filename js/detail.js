@@ -35,7 +35,7 @@ function createHtml(songDetails) {
                                             <div class="details-img" style="background-image: url('${songDetails.song_art_image_url}')">
                                             </div>
                                             <div class="artist-info">
-                                                <h3>Full song title: </h3>${songDetails.full_title}
+                                                <h3>Song title: </h3>${songDetails.full_title}
                                                 <h3>Release date: </h3>${songDetails.release_date}
                                                 <p>${songDetails.embed_content}</p>
                                             </div>
@@ -47,7 +47,7 @@ function createHtml(songDetails) {
                                             <div class="details-img" style="background-image: url('${songDetails.song_art_image_url}')">
                                             </div>
                                             <div class="artist-info">
-                                                <h3>Full song title: </h3>${songDetails.full_title}
+                                                <h3>Song title: </h3>${songDetails.full_title}
                                                 <h3>Release date: </h3><p>Unknown release date</p>
                                                 <p>${songDetails.embed_content}</p>
                                             </div>

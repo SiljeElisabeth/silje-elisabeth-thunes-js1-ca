@@ -1,11 +1,11 @@
 body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    max-width: 600px;
+    max-width: 900px;
     margin: 0 auto;
 }
 .artist-container{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap:10px;
 }
 
@@ -14,6 +14,14 @@ body{
     background-color: rgb(241, 241, 241);
     padding:20px;
     border-radius: 10px;
+}
+.artist-card a {
+    color:rgb(47, 47, 47);
+    text-decoration: none;
+}
+
+.artist-card a:hover{
+    text-decoration: underline;
 }
 .artist-card h1, 
 h2{
@@ -36,24 +44,33 @@ h2{
     left:22px;
 }
 nav {
-    background-color:gray;
+    background-color:rgba(202, 171, 171, 0.979);
     border-radius: 10px;
 }
 nav li {
     display: inline-block;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding:10px;
+    margin-left:210px;
 }
 
 nav a {
     text-decoration: none;
-    color: rgb(255, 255, 255);
-    padding-left:120px;
+    color: white;
+
+}
+
+nav a:hover{
+    color:rgba(241, 213, 213, 0.979);
+}
+.current{
+ font-weight: bold;
 }
 
 .loader{
     position: relative;
     top:200px;
+    left:150px;
     margin:0em 15em;
     border:15px solid rgb(212, 212, 212);
     border-top:15px solid rgb(251, 163, 0);
@@ -89,4 +106,29 @@ nav a {
 
 .artist-info{
     padding:20px;
+}
+
+form{
+    padding:2em;
+    border-radius: 1em;
+    border: 1px solid rgb(173, 173, 173);
+    background-color: rgb(231, 231, 231);
+}
+
+input {
+    width: 100%;
+    margin: 5px 0px;
+    padding:10px;
+    font-size:1em;
+    border-radius: .1em;
+}
+
+button {
+    background-color: rgb(38, 121, 177);
+    border:none;
+    width:200px;
+    padding:1em;
+    color: rgb(246, 246, 246);
+    border-radius: .2em;
+    margin-top:5px;
 }
