@@ -10,7 +10,6 @@ async function fetchMusic() {
     const results = await response.json();
     const artistList = results.response;
     const artistDetail = artistList.songs;  
-    console.log(artistDetail);
     
     artistContainer.innerHTML = "";
 
@@ -18,7 +17,7 @@ async function fetchMusic() {
 
     }catch(error) {
         console.log(error);
-        artistContainer.innerHTML += `<p>An error occured ${error}</p>`
+        artistContainer.innerHTML = `<p>An error occured ${error}</p>`
     }
 }
 
@@ -26,14 +25,14 @@ fetchMusic();
 
 function makeHtml(artistDetail) {
     for(let i = 0; i < artistDetail.length; i++) {
-
+        console.log(artistDetail[i].id);
         artistContainer.innerHTML += `<div class="artist-card">
                                         <div class="thumbnail-img" style="background-image: url('${artistDetail[i].song_art_image_thumbnail_url}')">
                                         </div>
                                         <h1>Artist: ${artistDetail[i].artist_names}</h1>
                                         <p>Song title: ${artistDetail[i].title}</p>
                                         <p>Lyric state: ${artistDetail[i].lyrics_state}</p>
-                                        <a href="details.html">See more</a>
+                                        <a href="details.html?id=${artistDetail[i].id}">See more</a>
                                      </div>`
     } 
 }

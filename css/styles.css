@@ -52,6 +52,8 @@ nav a {
 }
 
 .loader{
+    position: relative;
+    top:200px;
     margin:0em 15em;
     border:15px solid rgb(212, 212, 212);
     border-top:15px solid rgb(251, 163, 0);
@@ -71,6 +73,7 @@ nav a {
 }
 .artist-detail-container h1{
     text-align: center;
+    margin-top: 50px;
 }
 .details-img{
     width:400px;
