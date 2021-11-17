@@ -18,6 +18,7 @@ body{
 .artist-card a {
     color:rgb(47, 47, 47);
     text-decoration: none;
+    padding-left:145px;
 }
 
 .artist-card a:hover{
@@ -44,7 +45,7 @@ h2{
     left:22px;
 }
 nav {
-    background-color:rgba(202, 171, 171, 0.979);
+    background-color:rgba(153, 152, 152, 0.979);
     border-radius: 10px;
 }
 nav li {
@@ -61,7 +62,7 @@ nav a {
 }
 
 nav a:hover{
-    color:rgba(241, 213, 213, 0.979);
+    color:rgba(216, 216, 216, 0.979);
 }
 .current{
  font-weight: bold;
@@ -131,4 +132,5 @@ button {
     color: rgb(246, 246, 246);
     border-radius: .2em;
     margin-top:5px;
+    cursor:pointer;
 }
