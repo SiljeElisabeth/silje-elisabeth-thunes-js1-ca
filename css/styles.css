@@ -2,6 +2,7 @@ body{
     font-family: sans-serif;
     max-width: 900px;
     margin: 0 auto;
+    background-color: rgb(241, 241, 241);
 }
 .artist-container{
     display: grid;
@@ -10,8 +11,7 @@ body{
 }
 
 .artist-card{
-    border: 1px solid rgb(138, 138, 138);
-    background-color: rgb(241, 241, 241);
+    background-color: white;
     padding:20px;
     border-radius: 10px;
 }
@@ -49,7 +49,6 @@ h2{
 nav {
     background-color:rgb(195, 195, 195);
     border-radius: 10px;
-    border:1px solid rgb(32, 32, 0);
     margin: 10px 0px;
 }
 nav li {
@@ -113,6 +112,8 @@ nav a:hover{
 .artist-grid-container{
     display:grid;
     grid-template-columns: 1fr 1fr;
+    background-color: white;
+    border-radius: 10px;
 }
 
 .artist-info{
@@ -122,8 +123,7 @@ nav a:hover{
 form{
     padding:2em;
     border-radius: 1em;
-    border: 1px solid rgb(173, 173, 173);
-    background-color: rgb(231, 231, 231);
+    background-color: white;
 }
 
 input {
@@ -140,7 +140,7 @@ button {
     width:200px;
     padding:1em;
     color: rgb(246, 246, 246);
-    border-radius: .2em;
+    border-radius:  5px;
     margin-top:5px;
     cursor:pointer;
 }
