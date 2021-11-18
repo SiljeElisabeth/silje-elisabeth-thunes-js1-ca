@@ -1,5 +1,5 @@
 body{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: sans-serif;
     max-width: 900px;
     margin: 0 auto;
 }
@@ -16,7 +16,8 @@ body{
     border-radius: 10px;
 }
 .artist-card a {
-    color:rgb(47, 47, 47);
+    color:black;
+    font-weight: bold;
     text-decoration: none;
     padding-left:145px;
 }
@@ -29,6 +30,7 @@ h2{
     font-size: 1.5em;;
     margin:5px 0px;
     text-align: center;
+    color:rgb(31, 31, 31);
 }
 .artist-card p {
     font-size: 1.2em;
@@ -45,8 +47,10 @@ h2{
     left:22px;
 }
 nav {
-    background-color:rgba(153, 152, 152, 0.979);
+    background-color:rgb(195, 195, 195);
     border-radius: 10px;
+    border:1px solid rgb(32, 32, 0);
+    margin: 10px 0px;
 }
 nav li {
     display: inline-block;
@@ -57,12 +61,12 @@ nav li {
 
 nav a {
     text-decoration: none;
-    color: white;
+    color: black;
 
 }
 
 nav a:hover{
-    color:rgba(216, 216, 216, 0.979);
+    color:rgb(71, 71, 71);;
 }
 .current{
  font-weight: bold;
@@ -74,13 +78,19 @@ nav a:hover{
     left:150px;
     margin:0em 15em;
     border:15px solid rgb(212, 212, 212);
-    border-top:15px solid rgb(251, 163, 0);
+    border-top:15px solid rgb(62, 223, 251);
     border-radius: 50%;
     width:100px;
     height:100px;
     animation: spin 2s linear infinite;
 }
-
+.error{
+    background-color: rgba(255, 0, 0, 0.267);
+    border:1px solid red;
+    color:red;
+    padding:20px;
+    text-align: center;
+}
 @keyframes spin {
     0%{
         transform:rotate(0deg);
@@ -134,3 +144,23 @@ button {
     margin-top:5px;
     cursor:pointer;
 }
+button:hover{
+    background-color: rgb(35, 110, 160);
+}
+
+button:disabled {
+    background-color: rgb(194, 194, 194);
+}
+.form-error {
+    display: none;
+    color:red;
+    font-size: 1em;
+    margin-bottom:10px;
+}
+
+.message{
+    text-align: center;
+    color: green;
+}
+
+
